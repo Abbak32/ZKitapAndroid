@@ -1,0 +1,18 @@
+Z-KITAP APK'YI ANDROID STUDIO KURMADAN OLUSTURMA
+
+1. github.com adresinde ücretsiz hesap aç veya giriş yap.
+2. Sağ üstteki + işaretinden New repository seç.
+3. Repository name alanına ZKitapAndroid yaz; Public veya Private seçip Create repository de.
+4. Yeni depoda Add file > Upload files seç.
+5. ZIP'i bilgisayarında çıkar. ZIP'in içindeki ZKitapAndroid klasörünün İÇİNDEKİ tüm dosya ve klasörleri (app, .github dahil) yükleme sayfasına sürükle. Klasörün kendisini tek dosya olarak yükleme. .github klasörü görünmüyorsa GitHub web arayüzünden oluşturman gerekebilir.
+6. Commit changes ile yüklemeyi tamamla.
+7. Depoda Actions sekmesine gir. Sol tarafta Build ZKitap APK iş akışını seç.
+8. Run workflow düğmesine bas ve onayla.
+9. İşlem tamamlanıp yeşil tik göründüğünde aynı çalıştırma sayfasının en altındaki Artifacts bölümünden ZKitap-debug-APK dosyasını indir.
+10. İndirdiğin artifact ZIP dosyasını aç. İçindeki app-debug.apk dosyasını Xiaomi telefona gönderip yükle.
+
+Notlar:
+- Bu yöntem Android Studio kurmayı gerektirmez; GitHub hesabı ve internet bağlantısı gerekir.
+- Derleme başarısı garanti değildir. Derleme hata verirse Actions içindeki logun son hata kısmını paylaş.
+- Bu, test amaçlı debug APK üretir; mağazaya yayımlamak için uygun imzalı sürüm değildir.
+- APK'nın telefonda çalışması, Android izinleri ve uygulamanın gerçek Z-kitap ekranındaki davranışı ayrıca test edilmelidir.
